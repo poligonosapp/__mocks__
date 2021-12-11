@@ -1,0 +1,83 @@
+{
+  "compileOnSave": false,
+  "include": [
+    "./indexJSXHelperTypeScript1005HelperSpec.test",
+    "./src/indexJSXHelperTypeScript1005Helper",
+    "docs/**/*ts",
+    "src/**/*ts",
+    "src/**/*geojson",
+    "**/*.tsconfig.eslint.json",
+    "tsconfig-path-bootstrap.ts",
+    "rollup.config.ts",
+    "style.css",
+    "src/App.tsx",
+    "Leaflet.tsx",
+    "src/PoligonosAppReactDomServer.tsx",
+    "src/PoligonosAppBrowser.tsx",
+    "src/TokeComponent.tsx",
+    "src/index.tsx",
+    "src/functions/index.js",
+    "src/functions/FetchNetlify.js",
+    "src/getPolygons.js",
+    "src/spec/karma.conf.ts",
+    "src/fetch-polyfill.js",
+    "src/task.tsx",
+    "https://github.com/poligonosapp/__tests__/my-custom-reporter",
+  ],
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es2015",
+    "types": [
+      "mocha",
+      "expect.js",
+      "node",
+      "@types/jest",
+      "@jest/types",
+      "@types/lodash",
+      "@types/react",
+      "@types/react-dom",
+      "@types/webpack-env",
+      "@types/leaflet",
+      "@types/karma",
+      "@types/karma-jasmine"
+    ],
+    "jsx": "react",
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "paths": {
+      "package": ["./package.json"],
+      "src/*": ["src/*"],
+      "jquery": ["node_modules/jquery/dist/jquery"],
+      "*": ["*", "generated/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitThis": true,
+    "baseUrl": "./src/App.tsx",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "lib": ["es2018", "es2020", "dom", "ES2015.Promise", "WebWorker", "DOM"]
+  },
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "lib": ["dom", "es2015.promise", "es5"]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

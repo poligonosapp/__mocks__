@@ -1,0 +1,95 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "example-manual-mock",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-jest": "*",
+    "jest": "*"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "main": "getMockPolygonsLatLngBounds.tsx",
+  "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
+  "license": "ISC",
+  "description": "leaflet plugin and fork with typescript and snyk with jest mock-module",
+  "jest": {
+    "testEnvironment": "node",
+    "testRunner": "jest-circus/runner",
+    "name": "poligonosapp-__mocks____package_json",
+    "verbose": true,
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "ts",
+      "tsx",
+      "geojson",
+      "json",
+      "svg",
+      "css",
+      "scss",
+      "cjs"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./__mocks__/fileMock.js",
+      "\\.(css|less)$": "./__mocks__/styleMock.js"
+    },
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageReporters": [
+      "clover",
+      "json",
+      "lcov",
+      [
+        "text",
+        {
+          "skipFull": true
+        }
+      ]
+    ],
+    "projects": [
+      {
+        "displayName": "test"
+      },
+      {
+        "displayName": "lint",
+        "runner": "jest-runner-eslint",
+        "testMatch": [
+          "./**/*.js",
+          "./**/*.ts"
+        ]
+      }
+    ],
+    "reporters": [
+      "default",
+      [
+        "./__tests__/my-custom-reporter.js",
+        {
+          "banana": "yes",
+          "pineapple": "no"
+        }
+      ]
+    ],
+    "resolver": "my-module-resolve",
+    "snapshotFormat": {
+      "printBasicPrototype": false
+    },
+    "snapshotSerializers": [
+      "my-serializer-module"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  }
+}

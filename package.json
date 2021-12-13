@@ -1,6 +1,6 @@
 {
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "name": "example-manual-mock",
   "devDependencies": {
     "@babel/core": "*",
@@ -9,7 +9,10 @@
     "jest": "*"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "start",
+    "build": "build",
+    "publish": "publish"
   },
   "main": "getMockPolygonsLatLngBounds.tsx",
   "author": "Fabio Rodrigues <https://www.facebook.com/kefaro>, Luis Mendes <machadoluismendes@gmail.com>",
